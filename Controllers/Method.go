@@ -1,13 +1,11 @@
 package Controllers
 
-import "fmt"
-
-type Love struct {
-	Partner1 string
-	Partner2 string
-	LovePer  int
+type Rectangle struct {
+	Width  float64
+	Height float64
 }
 
-func (l Love) LoveCalculator() string {
-	return fmt.Sprintf("%v Love %v = %v", l.Partner1, l.Partner2, l.LovePer)
+// Method definition
+func (r Rectangle) Area() float64 {
+	return r.Width * r.Height
 }

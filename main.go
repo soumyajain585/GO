@@ -12,8 +12,8 @@ func main() {
 	Controllers.PushDateIntoRedis()
 
 	//call method
-	love := Controllers.Love{Partner1: "soum", Partner2: "yash", LovePer: 100}
-	fmt.Println(love.LoveCalculator())
+	rect := Controllers.Rectangle{Width: 2, Height: 5}
+	fmt.Println("area ", rect.Area())
 
 	//call concurrency
 	Controllers.Concurrency()
